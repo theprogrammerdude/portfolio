@@ -1,0 +1,81 @@
+:root {
+  --primary: #008cba;
+  --color: #5f9ea0;
+}
+
+* {
+  font-family: "Gochi Hand", cursive;
+}
+
+/* body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} */
+
+.nav-container {
+  height: 100%;
+  width: 300px;
+  z-index: 1;
+  overflow: hidden;
+  position: fixed;
+  padding-top: 3.5em;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.header {
+  padding-top: 0.63em;
+  font-size: 2.5em;
+  color: var(--primary);
+}
+
+.para {
+  font-size: 1.3em;
+  color: var(--primary);
+}
+
+nav {
+  padding-top: 2em;
+  font-size: 1.5em;
+}
+
+.profile-image {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+}
+
+.sm-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5em 0 1.5em 0;
+}
+
+.sm-icons {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* Main Content */
+
+.main {
+  margin-left: 300px;
+  padding: 0 10px;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  color: var(--color);
+  font-size: 4em;
+}
+
+.jumbo-div {
+  text-align: center;
+  color: var(--color);
+}
+
+.contact {
+  margin: auto;
+  max-width: 750px;
+}
