@@ -18,7 +18,7 @@
     <title>The Programmer Dude</title>
   </head>
   <body>
-    <div class="nav-container">
+    <div class="nav-container" id="navbar">
       <div>
         <img
           src="./assets/profile.jpg"
@@ -31,31 +31,61 @@
       <nav class="nav flex-column">
         <a class="nav-link active" href="#about">About</a>
         <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
       <div class="sm-container">
         <a target="_blank" href="https://www.facebook.com/theprogrammerdude">
-          <img class="sm-icons" src="./assets/fb.png" />
+          <img
+            class="sm-icons"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Facebook"
+            src="./assets/fb.png"
+          />
         </a>
         <a target="_blank" href="https://www.facebook.com/theprogrammerdude">
-          <img class="sm-icons" src="./assets/insta.png" />
+          <img
+            class="sm-icons"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Instagram"
+            src="./assets/insta.png"
+          />
         </a>
         <a target="_blank" href="https://www.youtube.com/TheProgrammerDude">
-          <img class="sm-icons" src="./assets/yt.png" />
+          <img
+            class="sm-icons"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Youtube"
+            src="./assets/yt.png"
+          />
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/shashank-jaitly-7b321ba6/"
         >
-          <img class="sm-icons" src="./assets/linkedin.png" />
+          <img
+            class="sm-icons"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="LinkedIn"
+            src="./assets/linkedin.png"
+          />
         </a>
       </div>
     </div>
 
     <div class="main">
-      <h1 class="heading">The Programmer Dude</h1>
-
+      <h1 class="heading">
+        The Programmer Dude
+      </h1>
+      <div class="nav-toggle" onclick="openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
       <div class="jumbotron">
         <div class="container jumbo-div" id="about">
           <h1 class="display-4">Welcome</h1>
@@ -69,11 +99,37 @@
         </div>
       </div>
 
-      <div>
-        <h1 class="heading">Projects</h1>
+      <div id="skills" class="skill-main jumbotron">
+        <h1 class="heading">Skills</h1>
+        <div class="skill-div">
+          <h3 class="skill-title">HTML</h3 class="skill-title">
+          <div class="skill-container">
+            <div class="skills html">90%</div>
+          </div>
+          <h3 class="skill-title">CSS</h3>
+          <div class="skill-container">
+            <div class="skills css">80%</div>
+          </div>
+          <h3 class="skill-title">JavaScript</h3>
+          <div class="skill-container">
+            <div class="skills js">60%</div>
+          </div>
+          <h3 class="skill-title">ReactJS</h3>
+          <div class="skill-container">
+            <div class="skills react">40%</div>
+          </div>
+          <h3 class="skill-title">AngularJS</h3>
+          <div class="skill-container">
+            <div class="skills ng">40%</div>
+          </div>
+          <h3 class="skill-title">Node.js</h3>
+          <div class="skill-container">
+            <div class="skills node">40%</div>
+          </div>
+        </div>
       </div>
 
-      <div>
+      <div class="jumbotron">
         <h1 class="heading" id="contact">Contact Me</h1>
         <div class="contact">
           <div class="input-group mb-3">
@@ -117,8 +173,7 @@
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default"
               rows="5"
-            >
-            </textarea>
+            ></textarea>
 
             <button
               type="button"
@@ -147,5 +202,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>

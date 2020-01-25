@@ -79,3 +79,122 @@ nav {
   margin: auto;
   max-width: 750px;
 }
+
+.skill-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  font-size: 20px;
+}
+
+.skill-title {
+  top: 0;
+  left: 0;
+}
+
+.html {
+  width: 90%;
+  padding-right: 10px;
+  background-color: coral;
+  border-radius: 20px;
+}
+
+.css {
+  width: 80%;
+  padding-right: 10px;
+  background-color: darkolivegreen;
+  border-radius: 20px;
+}
+
+.js {
+  width: 60%;
+  padding-right: 10px;
+  background-color: deepskyblue;
+  border-radius: 20px;
+}
+
+.react {
+  width: 40%;
+  padding-right: 10px;
+  background-color: gold;
+  border-radius: 20px;
+}
+
+.ng {
+  width: 40%;
+  padding-right: 10px;
+  background-color: indianred;
+  border-radius: 20px;
+}
+
+.node {
+  width: 40%;
+  padding-right: 10px;
+  background-color: lightsalmon;
+  border-radius: 20px;
+}
+
+.skill-main {
+  /* max-width: 750px; */
+  padding-bottom: 3em;
+}
+
+.skill-div,
+h3 {
+  color: var(--color);
+  margin: 0;
+}
+
+/* .skill-div {
+  padding-left: 20%;
+} */
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .heading {
+    font-size: 3em;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .nav-toggle {
+    padding-left: 50%;
+    display: block;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    cursor: pointer;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
